@@ -1,0 +1,16 @@
+query getExercisesFull($id: ID!) {
+  exercises(where: {workout: {id: $id}}) {
+    id
+    name
+    description
+    duration
+    video {
+      url
+    }
+    image {
+      url
+    }
+    sets
+    repetitions
+  }
+}

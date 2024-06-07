@@ -1,0 +1,18 @@
+query getExercisesShort($id: ID!) {
+  workout(where: {id: $id}) {
+    name
+    description
+    image {
+      url
+    }
+    exercises {
+      id
+      name
+      description
+      duration
+      image {
+        url
+      }
+    }
+  }
+}

@@ -1,0 +1,11 @@
+query getPrograms {
+  programs {
+    id
+    name
+    description
+    image {
+      fileName
+      url
+    }
+  }
+}
